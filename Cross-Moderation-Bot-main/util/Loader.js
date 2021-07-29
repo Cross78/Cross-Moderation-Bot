@@ -4,7 +4,7 @@ module.exports = client => {
     client.on('message', reqEvent('message'));
     client.on('message', reqEvent('afkCheck'));
     client.on('guildMemberAdd', reqEvent('cezaKontrol'));
-    client.on('message', reqEvent('Snipe'));
+    client.on('messageDelete', reqEvent('Snipe'));
     client.on('guildMemberAdd', reqEvent('bannedTagsCheck2'));
     client.on('guildMemberAdd', reqEvent('banCheck'));
     client.on('guildMemberUpdate', reqEvent('rolLog'));
